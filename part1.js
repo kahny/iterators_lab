@@ -25,78 +25,14 @@ Pretending we implemented the following methods, update this README with a descr
 * `min`
 	The Math.min() function returns the smallest of zero or more numbers.
 	Math.min(1,2,3,4) = 1
-
 * `each`
-	forEach performs a specified action for each element in an array 
-
-	var array = ["a", "b", "c"]; 
-	array.forEach(function(entry){
-		console.log(entry);
-	})
-
-prints in the console: 
-		a 
-		b 
-		c 
-		d
-
 * `map`
-	Map provides a callback funcion in order and constructs a new array from the results 
-
-	var numbers = [1, 16, 25]
-	var roots = numbers.map(Math.sqrt);
-	
-	roots
-	[1, 4, 5]
-
-	you can also use this for just a function in general instead of calling math, the bottom will return the same result as the previous example  
-
-	var numbers = [1, 16, 25];
-	var doubles = numbers.map(function(num){
-  	return Math.pow(num, .5);
-	});
-
-
 * `filter`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-
-
-	The filter function creates a new array with all elements that pass the test implemented by the provided function 
-
-	function isSmallEnough(element) {
-		return element <=10;
-	}
-
-	var filtered = [1,2,21,42,3].filter(isSmallEnough)
-
-	filtered
-	[1, 2, 3]
-
 * `reduce`: [note](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-
-	The reduce() method applies a function against an accumulator and each value of the array (from left-to-right) has to reduce it to a single value.
-
-	var flattened = [[1,3], [5,7], [9,11]].reduce(function(a,b){
-	return a.concat(b);
-	});
-	undefined
-	flattened
-	[1, 3, 5, 7, 9, 11]
-
-
 * `reject`: [note](http://underscorejs.org/#reject)
 
-This is essentially the opposite of filter. 
+Use the notes provided to help guide you explanation.
 
-	function isLargeEnough(element){
-		return element>10;
-	}
-
-	var small = [1,2,21,42,3].reject(isLargeEnough)
-
-
-num=[1,2,3,4,5,6]
-var odds = num.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
-=> [1, 3, 5]
 
 
 
